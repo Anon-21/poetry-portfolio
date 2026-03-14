@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Poetry & Essays Portfolio
 
-## Getting Started
+A personal website for publishing original poetry, essays, and a curated collection of favorite poems.
+Built with **Next.js**, **Prisma**, and **PostgreSQL**.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Overview
+
+This site functions as a small digital notebook for writing and sharing:
+
+* Original poetry
+* Essays and reflections
+* A curated poetry collection from authors I admire
+
+It also includes a private **admin interface** used to create, edit, and manage posts.
+
+---
+
+## Features
+
+* Publish **poems and blog posts**
+* Curated **poetry collection page**
+* **Markdown rendering** for writing content
+* Animated hover effects and custom styling
+* Admin panel for creating and deleting posts
+* PostgreSQL database managed with Prisma
+
+---
+
+## Tech Stack
+
+* **Framework:** Next.js
+* **Database ORM:** Prisma
+* **Database:** PostgreSQL
+* **Deployment:** Vercel
+* **Styling:** Tailwind CSS
+* **Content Rendering:** React Markdown
+
+---
+
+## Project Structure
+
+```
+app/
+  blog/
+  poems/
+  collection/
+  admin/
+  api/
+
+components/
+lib/
+prisma/
+public/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Key areas:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* `app/poems` – poems list and poem pages
+* `app/blog` – essays/blog posts
+* `app/collection` – curated poetry collection
+* `app/admin` – content management interface
+* `app/api` – server routes for creating and deleting posts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Local Development
 
-To learn more about Next.js, take a look at the following resources:
+Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+git clone https://github.com/yourusername/your-repo-name.git
+cd your-repo-name
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Install dependencies:
 
-## Deploy on Vercel
+```
+npm install
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Create an `.env` file and add your database connection:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+DATABASE_URL=your_database_connection_string
+```
+
+Run the development server:
+
+```
+npm run dev
+```
+
+The site will be available at:
+
+```
+http://localhost:3000
+```
+
+---
+
+## Database Setup
+
+Prisma is used to manage the database schema.
+
+Push schema changes to the database:
+
+```
+npx prisma db push
+```
+
+Open the Prisma database GUI:
+
+```
+npx prisma studio
+```
+
+---
+
+## Deployment
+
+The site is deployed using **Vercel**.
+
+Steps:
+
+1. Push the repository to GitHub
+2. Import the project into Vercel
+3. Add environment variables (DATABASE_URL)
+4. Deploy
+
+---
+
+## Author
+
+Created as a personal creative space for writing, reflection, and poetry.
+
+---
