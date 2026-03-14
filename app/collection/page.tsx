@@ -18,7 +18,7 @@ export default async function CollectionPage() {
 
       </h1>
 
-  {posts.map((post) => (
+  {posts.map((post: any) => (
   <div
     key={post.id}
     className="group relative bg-[var(--bg-cream)] hover:bg-[var(--accent-green)]/30 transition-all duration-200 p-6 rounded-xl mb-6 hover:-translate-y-1"

@@ -17,7 +17,7 @@ export default async function BlogPage() {
         <img src="https://i.ibb.co/b5nyfvGz/bottom.gif" alt="bottom"/>
       </h1>
 
-    {posts.map((post) => (
+    {posts.map((post: any) => (
   <div
     key={post.id}
     className="group relative bg-[var(--bg-cream)] hover:bg-[var(--accent-pink)]/30 transition-all duration-200 p-6 rounded-xl mb-6 hover:-translate-y-1"

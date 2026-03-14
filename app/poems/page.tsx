@@ -17,7 +17,7 @@ export default async function PoemsPage() {
         <img src="https://i.ibb.co/b5nyfvGz/bottom.gif" alt="bottom"/>
       </h1>
 
-{poems.map((poem) => (
+{poems.map((poem: any) => (
   <div
     key={poem.id}
     className="group relative bg-[var(--bg-cream)] hover:bg-[var(--accent-blue)]/30 transition-all duration-200 p-6 rounded-xl mb-6 hover:-translate-y-1"
