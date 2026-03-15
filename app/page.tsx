@@ -2,7 +2,7 @@ export default function Home() {
   return (
 
     <main>
-<title>Sonal's Poetry Portfolio</title>
+
       {/* HERO */}
       <section className="relative bg-[var(--bg-dark)] text-[var(--text-light)] py-30 text-center">
 
