@@ -80,7 +80,7 @@ export default function Home() {
           </div>
 
           <img
-            src="https://cdn.prod.website-files.com/5a7edf0d432d43000114d381/5f41983ea3e67929f23231ad_sunrise.png"
+            src="https://i.ibb.co/TM4JfB0M/output-onlinegiftools-3.gif"
             className="w-40"
             alt="blog illustration"
           />
