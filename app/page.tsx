@@ -6,7 +6,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative bg-[var(--bg-dark)] text-[var(--text-light)] py-24 md:py-30 text-center overflow-hidden">
-
+<br/><br/>
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           My <span className="text-[var(--accent-orange)]">Poetry</span> &{" "}
           <span className="text-[var(--accent-blue)]">Essays</span>
@@ -52,7 +52,7 @@ export default function Home() {
 
             <a
               href="/poems"
-              className="inline-block px-6 py-3 rounded-full bg-[var(--accent-orange)] w-full md:w-auto text-center"
+              className="inline-block px-6 py-3 rounded-full bg-[var(--accent-orange)] text-center"
             >
               Read poems
             </a>
@@ -85,7 +85,7 @@ export default function Home() {
 
             <a
               href="/blog"
-              className="inline-block px-6 py-3 rounded-full bg-[var(--accent-blue)] text-black w-full md:w-auto text-center"
+              className="inline-block px-6 py-3 rounded-full bg-[var(--accent-blue)] text-black text-center"
             >
               Read blog
             </a>

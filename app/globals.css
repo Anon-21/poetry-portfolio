@@ -16,6 +16,9 @@
   --text-dark: #1d1c1c;
 }
 
+main {
+  padding-top: 80px;
+}
 
 body {
   background: var(--bg-dark);
