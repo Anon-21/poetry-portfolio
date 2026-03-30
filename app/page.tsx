@@ -19,8 +19,8 @@ export default function Home() {
 <div className="absolute right-0 bottom-0 w-64 h-64 bg-[var(--accent-pink)]/20 rounded-full blur-3xl"></div>
 <Image
   src="/images/pen.gif"
-  width={250}
-  height={250}
+  width={300}
+  height={300}
   alt="pen"
   className="mx-auto mt-10"
 />

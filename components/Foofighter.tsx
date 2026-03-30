@@ -29,13 +29,14 @@ export default function Footer() {
 
         </div>
 
-        <Image
-  src="/images/rollercoaster.gif"
-  width="100"
-  height="100"
-  alt="rollercoaster"
-  className="mx-auto mb-4 object-contain"
-/>
+<div className="flex justify-center">
+  <Image
+    src="/images/rollercoaster.gif"
+    width={100}
+    height={100}
+    alt="rollercoaster"
+  />
+</div>
 
         <p className="text-sm opacity-70 pt-6">
           {new Date().getFullYear()} Sonal Mohrir

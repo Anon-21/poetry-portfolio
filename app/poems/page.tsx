@@ -39,11 +39,13 @@ export default async function PoemsPage() {
   >
 
     {/* hover icon */}
-    <img
-      src="https://cdn.prod.website-files.com/5a7edf0d432d43000114d381/5f41ce275758783c6a0985fb_arrow.png"
-      className="absolute left-4 top-1/2 w-7 -translate-y-1/2 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:rotate-2"
-      alt=""
-    />
+        <Image
+  src="/images/arrow.png"
+  width={5}
+  height={5}
+  alt="arrow"
+  className="absolute left-4 top-1/2 w-7 -translate-y-1/2 opacity-0 -translate-x-2 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0 group-hover:rotate-2"
+/>
 
     <Link href={`/poems/${poem.slug}`}>
       <h2 className="pl-6 text-2xl text-[var(--text-dark)] font-semibold transition group-hover:text-[var(--text-light)]">
