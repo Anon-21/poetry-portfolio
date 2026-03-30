@@ -13,6 +13,8 @@ export default function Loading() {
 />
 
       <Skeleton count={8} className="mb-2" />
+         <Skeleton duration={2} />
     </main>
+
   )
 }

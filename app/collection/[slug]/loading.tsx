@@ -8,6 +8,7 @@ export default function Loading() {
   highlightColor="#fdf6ec" className="mb-6" />
 
       <Skeleton count={8} className="mb-2" />
+           <Skeleton duration={2} />
     </main>
   )
 }
