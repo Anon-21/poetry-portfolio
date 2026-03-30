@@ -34,7 +34,7 @@ export default function Footer() {
   width="100"
   height="100"
   alt="rollercoaster"
-  className="newcenter"
+  className="mx-auto mb-4 object-contain"
 />
 
         <p className="text-sm opacity-70 pt-6">
