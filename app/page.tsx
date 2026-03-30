@@ -25,10 +25,6 @@ export default function Home() {
   className="mx-auto mt-10"
 />
 
-        {/* Scroll arrow */}
-        <a href="#poems" className="scroll-arrow">
-          ↓
-        </a>
 
       </section>
 
