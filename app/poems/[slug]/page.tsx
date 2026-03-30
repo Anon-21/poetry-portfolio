@@ -23,23 +23,14 @@ export default async function PoemPage({
 
   return (
     <main className="max-w-2xl mx-auto p-10">
-      <h1 className="text-5xl font-bold mb-10 text-[var(--accent-pink)]">
+      <h1 className="text-5xl font-bold mb-10 text-[var(--accent-pink)] text-center">
         {poem.title}
       </h1>
       
-      <div className="poem-wrapper">
-        <pre className="whitespace-pre-wrap font-serif">
-          <ReactMarkdown
-            components={{
-              p: ({ children }) => (
-                <p className="poem-line">{children}</p>
-              ),
-            }}
-          >
-            {poem.content}
-          </ReactMarkdown>
-        </pre>
-      </div>
+      {/* Remove any extra wrappers */}
+      <pre className="whitespace-pre-wrap text-lg font-serif text-center">
+        <ReactMarkdown>{poem.content}</ReactMarkdown>
+      </pre>
     </main>
   )
 }
