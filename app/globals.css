@@ -80,3 +80,30 @@ html {
   scroll-behavior: smooth; /* Enables smooth scrolling */
 }
 
+/* Poem formatting */
+.poem-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.poem-wrapper pre {
+  text-align: center;
+  line-height: 2;
+  font-size: 1.125rem;
+  width: 100%;
+}
+
+.poem-line {
+  margin: 0;
+  padding: 0;
+}
+
+/* Create stanza breaks - empty lines in markdown become separate p tags */
+.poem-wrapper p + p {
+  margin-top: 2rem;
+}
+
+/* Optional: Slightly indent alternating lines for rhythm */
+.poem-line:nth-child(even) {
+  margin-left: 0.5rem;
+}
