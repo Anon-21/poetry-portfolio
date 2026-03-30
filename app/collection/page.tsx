@@ -1,5 +1,6 @@
 import prisma from "@/lib/prisma"
 import Link from "next/link"
+import Image from "next/image"
 
 export const revalidate = 60
 
@@ -13,11 +14,22 @@ export default async function CollectionPage() {
   return (
     <main className="max-w-3xl mx-auto py-20">
 
-      <h1 className="text-5xl mb-12 text-center">
-<img src="https://i.ibb.co/PGx7qppV/top.gif" alt="top"/>
-        Written by the Greats<br/><br/>
-        <img src="https://i.ibb.co/b5nyfvGz/bottom.gif" alt="bottom"/>
-
+  <h1 className="text-5xl mb-12 text-center">
+<Image
+  src="/images/top.gif"
+  width={1043}
+  height={147}
+  alt="top"
+  className="mx-auto mb-4"
+/>
+Written By the Greats
+<Image
+  src="/images/bottom.gif"
+  width={1015}
+  height={134}
+  alt="bottom"
+  className="mx-auto mt-4"
+/>
       </h1>
 
   {posts.map((post: any) => (

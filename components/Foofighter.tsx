@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function Footer() {
   return (
     <footer className="bg-[var(--bg-cream)] text-[var(--text-dark)] py-16">
@@ -27,8 +29,12 @@ export default function Footer() {
 
         </div>
 
-        <img src={"https://cdn.prod.website-files.com/5a7edf0d432d43000114d381/5fa4716d8512e8eb24cd8384_rollercoaster.png"}
-className="newcenter"
+        <Image
+  src="/images/rollercoaster.gif"
+  width="100"
+  height="100"
+  alt="rollercoaster"
+  className="newcenter"
 />
 
         <p className="text-sm opacity-70 pt-6">

@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function Home() {
   return (
 
@@ -16,9 +17,13 @@ export default function Home() {
         </p>
 <div className="absolute left-0 top-0 w-64 h-64 bg-[var(--accent-purple)]/20 rounded-full blur-3xl"></div>
 <div className="absolute right-0 bottom-0 w-64 h-64 bg-[var(--accent-pink)]/20 rounded-full blur-3xl"></div>
-        <img
-          src="https://i.ibb.co/bRJ7kSFV/output-onlinegiftools-2.gif" className="center"
-        />
+<Image
+  src="/images/pen.gif"
+  width={200}
+  height={200}
+  alt="pen"
+  className="mx-auto mt-10"
+/>
 
         {/* Scroll arrow */}
         <a href="#poems" className="scroll-arrow">
@@ -33,11 +38,13 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto flex items-center gap-16 pl-12">
 
-          <img
-            src="https://cdn.prod.website-files.com/5a7edf0d432d43000114d381/5f41cacc2dc09170e3faaed4_blush618.png"
-            className="w-40"
-            alt="poems illustration"
-          />
+<Image
+  src="/images/smile.gif"
+  width={160}
+  height={160}
+  alt="smile"
+  className="w-40 h-40 object-contain"
+/>
 
           <div className="max-w-md">
             <h2 className="text-4xl mb-4">Poems</h2>
@@ -78,12 +85,13 @@ export default function Home() {
               Read blog
             </a>
           </div>
-
-          <img
-            src="https://i.ibb.co/TM4JfB0M/output-onlinegiftools-3.gif"
-            className="w-40"
-            alt="blog illustration"
-          />
+<Image
+  src="/images/sun.gif"
+  width={160}
+  height={160}
+  alt="sun"
+  className="w-40 h-40 object-contain"
+/>
 
         </div>
 
