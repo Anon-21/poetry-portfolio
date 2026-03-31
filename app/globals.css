@@ -5,63 +5,115 @@
   --bg-dark: #1d1c1c;
   --bg-cream: #f6ebd9;
 
-  --accent-pink: #ea779e;
+  --accent-pink: rgb(234, 119, 158);
   --accent-orange: #ffa877;
   --accent-yellow: #ffbe64;
   --accent-green: #a3b732;
-  --accent-blue: #7dc0dd;
-  --accent-purple: #6265aa;
+  --accent-blue: rgb(125, 192, 221);
+  --accent-purple: rgb(98, 101, 170);
 
   --text-light: #f7f7f7;
   --text-dark: #1d1c1c;
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 125px;
 }
 
 body {
   background: var(--bg-dark);
   color: var(--text-light);
 }
+
+nav {
+  display: flex;
+  gap: 1.8rem;
+  justify-content: center;
+  padding: 1.3rem 0;
+}
+
 nav a {
   position: relative;
   text-decoration: none;
-  padding-bottom: 4px;
+  padding: 10px 12px;
+  transition: all 0.25s ease;
+  font-size: 1rem;
 }
 
-/* underline base */
-nav a::after {
+/* Create a circular pseudo-element behind the text */
+nav a::before {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
-  height: 3px;
-  transition: width 0.25s ease;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: -1;
+  opacity: 0;
+  filter: blur(8px);
 }
 
-/* colors */
-.nav-home::after {
-  background: var(--accent-pink);
+/* Hover effect - circular glow with blended colors */
+.nav-home:hover::before {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 52, 120, 0.13);
+  box-shadow: 0 0 12px 6px rgba(255, 52, 120, 0.278);
+  opacity: 1;
 }
 
-.nav-poems::after {
-  background: var(--accent-blue);
+.nav-poems:hover::before {
+  width: 38px;
+  height: 38px;
+  background: rgba(125, 192, 221, 0.127);
+  box-shadow: 0 0 12px 6px rgba(125, 192, 221, 0.278);
+  opacity: 1;
 }
 
-.nav-blog::after {
-  background: var(--accent-orange);
+.nav-blog:hover::before {
+  width: 38px;
+  height: 38px;
+  background: rgba(255, 169, 119, 0.134);
+  box-shadow: 0 0 12px 6px rgba(255, 168, 119, 0.278);
+  opacity: 1;
 }
 
-.nav-collection::after {
-  background: var(--accent-purple);
+.nav-collection:hover::before {
+  width: 38px;
+  height: 38px;
+  background: rgba(98, 100, 170, 0.516);
+  box-shadow: 0 0 12px 6px rgba(98, 100, 170, 0.278);
+  opacity: 1;
 }
 
-/* hover animation */
-nav a:hover::after {
-  width: 100%;
+/* Subtle text glow */
+.nav-home:hover {
+  text-shadow: 0 0 3px rgba(255, 52, 119, 0.4);
 }
+
+.nav-poems:hover {
+  text-shadow: 0 0 3px rgba(0, 176, 251, 0.4);
+}
+
+.nav-blog:hover {
+  text-shadow: 0 0 3px rgba(255, 168, 119, 0.4);
+}
+
+.nav-collection:hover {
+  text-shadow: 0 0 3px rgba(98, 101, 170, 0.4);
+}
+
+/* Remove any background that might interfere */
+.nav-home:hover,
+.nav-poems:hover,
+.nav-blog:hover,
+.nav-collection:hover {
+  background: none;
+}
+
 
 img.center{
   display: block;
